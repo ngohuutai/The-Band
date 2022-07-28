@@ -1,0 +1,116 @@
+/* 
+PC : >= 1024px 
+Tablet : >= 740px && < 1024px
+Mobile: < 740px
+Đổi px sang em giúp không bị lỗi ở nhiều trình duyệt khác nhau
+*/
+
+/* PC */
+@media (min-width: 64em) {
+    
+}
+
+/* Tablet && Mobile*/
+@media (max-width: 63.9375em) {
+    .btn {
+        padding: 16px;
+    }
+
+    #nav .sub-nav a {
+        padding: 5px 12px;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .contact-info {
+        /* Chiều cao dòng chữ tiếng anh 1.4 tiếng việt 1.6*/
+        line-height: 2;
+    }
+
+    .contact-submit-btn {
+        font-size: 17px;
+    }
+
+    #footer .socials-list {
+        font-size: 35px;
+    }
+
+    #footer .socials-list {
+        margin: 0 8px;
+    }
+
+    #footer .coppyright a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .s-full-width,
+    .s-col-full {
+        width: 100% !important;
+    }
+
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
+    
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    #header {
+        /* Khi thằng con vượt quá thằng cha thì ẩn đi */
+        overflow: hidden;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #nav {
+        display: block;
+    }
+    
+    #nav >li {
+        display: block;
+    }
+
+    #nav li a {
+        padding: 1px 24px;
+    }
+
+    /* Pseudo classes */
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav .sub-nav {
+        /* Trả về giá trị mặc định */
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav .sub-nav a {
+        color: #fff;
+        padding: 5px 41px;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    .contact-form {
+        margin-top: 32px;
+        margin-bottom: 110px;
+    }
+}
